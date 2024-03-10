@@ -1,7 +1,7 @@
 import { Inter } from 'next/font/google';
 import local from 'next/font/local';
 
-const LINE = local({
+export const lineFont = local({
   src: [
     {
       path: '/fonts/LINESeedJP_OTF_Th.woff2',
