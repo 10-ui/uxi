@@ -1,12 +1,18 @@
 import * as Icon from '@/components/icons';
 import { Button } from '@/components/ui/button';
+import { lineFont } from '@/lib/fonts';
+import { cn } from '@/lib/utils';
 import Link from 'next/link';
 
 const Header = () => {
   return (
     <header className='flex items-center justify-between w-dvw py-10 px-15'>
       <Icon.Logo />
-      <div className='flex items-center gap-10'>
+      <div
+        className={cn(
+          'flex items-center gap-10',
+          `${lineFont.className}`
+        )}>
         <Button variant={'link'} asChild>
           <Link href={'#'}>Works</Link>
         </Button>
