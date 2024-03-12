@@ -7,7 +7,9 @@ import Link from 'next/link';
 const Header = () => {
   return (
     <header className='flex fixed top-0 left-0 items-center justify-between w-dvw py-10 px-15'>
-      <Icon.Logo />
+      <Link href={'/'}>
+        <Icon.Logo />
+      </Link>
       <div
         className={cn(
           'flex items-center gap-10',
