@@ -1,40 +1,34 @@
-import * as Icon from '@/components/icons';
-import { Button } from '@/components/ui/button';
-import { lineFont } from '@/lib/fonts';
-import { cn } from '@/lib/utils';
-import Link from 'next/link';
+import * as Icon from "@/components/icons";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className='flex fixed top-0 left-0 items-center justify-between w-dvw py-10 px-15'>
-      <Link href={'/'}>
+    <header className='fixed left-0 top-0 z-10 flex w-screen items-center justify-between px-15 py-10'>
+      <Link href={"/"}>
         <Icon.Logo />
       </Link>
-      <div
-        className={cn(
-          'flex items-center gap-10',
-          `${lineFont.className}`
-        )}>
+      <div className='flex items-center gap-10'>
         <Button
           className='text-lg duration-300 hover:text-acc1'
-          variant={'link'}
+          variant={"link"}
           asChild>
-          <Link href={'/works'}>Works</Link>
+          <Link href={"/works"}>Works</Link>
         </Button>
         <Button
           className='text-lg duration-300 hover:text-acc2'
-          variant={'link'}
+          variant={"link"}
           asChild>
-          <Link href={'/about'}>About</Link>
+          <Link href={"/about"}>About</Link>
         </Button>
         <Button
           className='text-lg duration-300 hover:text-main'
-          variant={'link'}
+          variant={"link"}
           asChild>
-          <Link href={'skills'}>Skills</Link>
+          <Link href={"skills"}>Skills</Link>
         </Button>
         <Button asChild className='flex items-center gap-2'>
-          <Link href={'/contact'}>
+          <Link href={"/contact"}>
             Contact
             <Icon.Mail />
           </Link>
