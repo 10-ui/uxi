@@ -19,15 +19,11 @@ const Header = () => {
           className='text-lg duration-300 hover:text-acc2'
           variant={"link"}
           asChild>
-          <Link href={"/about"}>About</Link>
-        </Button>
-        <Button
-          className='text-lg duration-300 hover:text-main'
-          variant={"link"}
-          asChild>
           <Link href={"skills"}>Skills</Link>
         </Button>
-        <Button asChild className='flex items-center gap-2'>
+        <Button
+          asChild
+          className='flex items-center gap-2 bg-main hover:bg-main/70'>
           <Link href={"/contact"}>
             Contact
             <Icon.Mail />
